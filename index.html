@@ -84,9 +84,9 @@ main page -->
       <div class="row">
         <div class="col-md-12 col-lg-6  col-sm-12 mt-5 p-5">
         <div class="container-fluid">
-          <div class="text-center border-0 ml-5 mr-5  p-5">
+          <div class="text-center border-0 ml-5 mr-5 mt-5 p-5">
             <div class="text-center">
-              <h1 class="h1-text display-4 "style="color: #272343;font-family: 'Chakra Petch'"><b>Who we are&nbsp;</b></h1>
+              <h1 class="h1-text display-4 mt-5"style="color: #272343;font-family: 'Chakra Petch'"><b>Who we are&nbsp;</b></h1>
                 <hr class="w-50" />
                 <h5 class="h5-text  text-center" style="color:#2d334a;">OSAAS was founded with an aim to equip businesses and consumers alike with the top of the class information security products, consultancy and training. Founders, having proved their mettle in cyber security industry, recognize the gap between the user's demand and product's feature.&nbsp;</h5>
                 <h5 class="h5-text  text-center" style="color:#2d334a;">For the first time in india, OSAAS is bringing cyber security consultation directly to consumers at affordable prices.&nbsp;</h5>
@@ -94,8 +94,8 @@ main page -->
         </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-6 col-sm-12 ">
-          <img src="images/sec.svg " width="500" height="500" class="p-5 mx-auto d-block" alt="..." />
+        <div class="col-md-12 col-lg-6 col-sm-12 p-5">
+          <img src="images/sec.svg " width="500" height="500" class="img-log mx-auto d-block" alt="..." />
         </div>
       </div>
     </div>
@@ -111,7 +111,7 @@ main page -->
                     <div class="container-fluid" >
                         <div class="row justify-content-center">
                             <div class=" col-md-12 col-sm-12 col-lg-6 p-5">
-                            	 <img src="images/course.svg" width="500" height="500" class="img ml-5  mx-auto d-block " alt="..." />
+                               <img src="images/course.svg" width="500" height="500" class="img ml-5  mx-auto d-block " alt="..." />
                             </div>
                             <div class="col-lg-6 col-sm-12 mt-5 p-5">
                               <div class="text-center">
@@ -218,11 +218,11 @@ main page -->
                       <input class="form-control form-control-lg mt-3" id="request-form-designation" type="text" name="designation" placeholder="Designation">
                     </div>
                    <div class="col-lg-6 col-md-12">
-                   	<select class="form-control form-control-lg mt-3">
-						<option>Product Demo &nbsp;</option>
+                    <select class="form-control form-control-lg mt-3">
+            <option>Product Demo &nbsp;</option>
                         <option>Consultancy&nbsp;</option>
                         <option>Training&nbsp;</option>
-						</select>
+            </select>
                       
                     </div>
                   </div>
@@ -304,8 +304,6 @@ main page -->
     </div>
   </div>
 <div class="snackbars" id="form-output-global"></div>
-<script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         $(document).on("scroll", onScroll);
@@ -529,7 +527,7 @@ main page -->
       var val = response.country;
       var sel = document.getElementById("cc");
       sel.value = map[val];
-  }, "json");
+  }, "jsonp");
       });
 
 
@@ -621,10 +619,3 @@ $(document).ready(function(){
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
