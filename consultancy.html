@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:500&display=swap" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
@@ -26,11 +27,11 @@
     <div class="page">
       <header class="page-head">
         <div class="rd-navbar-wrap" style="background-color: #232946">
-          <nav class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="53px" data-xl-stick-up-offset="53px" data-xxl-stick-up-offset="53px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true" style="background-color: #232946">
+          <nav id="navbar-1" class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="53px" data-xl-stick-up-offset="53px" data-xxl-stick-up-offset="53px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true" style="background-color: #232946">
             <div class="rd-navbar-inner">
               <div class="rd-navbar-group">
                 <div class="rd-navbar-panel">
-                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button><a class="rd-navbar-brand brand" href="index.html"><img src="images/trans_test.png" alt="" width="73" /><h3 class="text-light" style="padding-left: 10px; padding-top: 5px;"><b>OS<span style="color:#f9bc60">AA</span>S</h3><b></h3></a>
+                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button><a class="rd-navbar-brand brand" href="index.html"><img src="images/trans_test.png" alt="" width="73" /><h3 class="text-light" style="padding-left: 10px; padding-top: 5px;font-family: 'Chakra Petch', sans-serif;"><b>OS<span style="color:#f9bc60">AA</span>S</h3><b></h3></a>
                 </div>
                 <div class="rd-navbar-nav-wrap">
                   <div class="rd-navbar-nav-inner">
@@ -58,12 +59,12 @@
 
       <div class="jumbotron-fluid"style="background-color:;">
 
-  <div class="container-fluid mt-5justify-content-center block" style="background-color:#232946;height: 50vh">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-lg-12 mt-5 justify-content-center">
-       <h3 class="h1-text display-6 text-center p-5" style="color:#b8c1ec;margin-top:100px;font-family: 'Chakra Petch', sans-serif;
+  <div class="container-fluid " style="background-color:#232946;height: 50vh">
+    <div class="row text-center d-flex align-items-center ">
+      <div class="col-md-12 col-sm-12 col-lg-12 mt-5 ">
+       <h3 class=" text-center mt-5" style="color:#b8c1ec;font-family: 'Chakra Petch', sans-serif;
            ">Create A Strong & Secure Organisation With Our Consultation&nbsp;</h3>
-        <hr class="w-75" style="height: 5px;background-color:#eebbc3" />
+        <hr class="w-100" style="height: 2px;background-color:#eebbc3" />
       </div>
     </div>
   </div>
@@ -234,7 +235,18 @@ function onScroll(event){
 
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
-
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar-1").style.top = "0px";
+        } else {
+          document.getElementById("navbar-1").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+</script>
     <script>
       AOS.init({
         easing: 'ease-out-back',
