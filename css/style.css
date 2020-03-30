@@ -10605,9 +10605,7 @@ html:not(.lt-ie10) .not-animated {
 	padding-left: 270px;
 }
 
-.rd-navbar--is-stuck {
-	border-bottom: 1px solid #e5e7e9;
-}
+
 
 .rd-navbar.rd-navbar-fixed + .rd-navbar.rd-navbar--is-clone,
 .rd-navbar.rd-navbar-sidebar + .rd-navbar.rd-navbar--is-clone {
