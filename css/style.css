@@ -58,7 +58,7 @@ body {
 	font-family: "Lato", Helvetica, Arial, sans-serif;
 	-webkit-text-size-adjust: none;
 	color: #9f9f9f;
-	background-color: #d5e1ed;
+	background-color:white;
 	font-weight: 400;
 	-webkit-font-smoothing: subpixel-antialiased;
 	text-rendering: optimizeLegibility;
@@ -70,6 +70,10 @@ body {
 
 #rcorners1 {
  clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 0);
+}
+
+#rcorners2 {
+clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
 }
 /*
 * @section      Page Header
@@ -313,7 +317,6 @@ h2,
 	font-size: 32px;
 	line-height: 1.4;
 	letter-spacing: -.025em;
-	font-style: italic;
 }
 
 @media (min-width: 768px) {
@@ -1461,6 +1464,7 @@ figure img {
 
 .figure .caption {
 	padding: 15px;
+
 }
 
 .rd-mailform {
@@ -10605,7 +10609,9 @@ html:not(.lt-ie10) .not-animated {
 	padding-left: 270px;
 }
 
-
+.rd-navbar--is-stuck {
+	
+}
 
 .rd-navbar.rd-navbar-fixed + .rd-navbar.rd-navbar--is-clone,
 .rd-navbar.rd-navbar-sidebar + .rd-navbar.rd-navbar--is-clone {
@@ -11402,7 +11408,6 @@ html:not(.lt-ie10) .not-animated {
 	padding: 112px 0 56px;
 	color: #fff;
 	background: #094067;
-	border-right: 1px solid #e5e7e9;
 	overflow-x: hidden;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
