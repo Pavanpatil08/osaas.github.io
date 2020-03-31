@@ -58,7 +58,6 @@ body {
 	font-family: "Lato", Helvetica, Arial, sans-serif;
 	-webkit-text-size-adjust: none;
 	color: #9f9f9f;
-	background-color:white;
 	font-weight: 400;
 	-webkit-font-smoothing: subpixel-antialiased;
 	text-rendering: optimizeLegibility;
@@ -73,7 +72,7 @@ body {
 }
 
 #rcorners2 {
-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
 }
 /*
 * @section      Page Header
@@ -13071,7 +13070,6 @@ html.boxed .rd-navbar--is-clone {
 	bottom: 0;
 	left: 0;
 	z-index: 0;
-	background: #000;
 	opacity: .5;
 }
 
