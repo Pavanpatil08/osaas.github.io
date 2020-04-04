@@ -134,7 +134,6 @@ background-color: #e3f6f5;
 .dropdown-content {
   display: none;
   margin-top: 3px;
-
   position: absolute;
   background-color:white;
   min-width: 160px;
@@ -145,7 +144,9 @@ background-color: #e3f6f5;
 .dropdown-content a {
   color: black;
   font-size: 16px;
-  padding: 15px 16px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-top: 15px;
   text-decoration: none;
   display: block;
 }
