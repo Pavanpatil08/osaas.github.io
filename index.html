@@ -33,30 +33,33 @@
             <div class="rd-navbar-inner" >
               <div class="rd-navbar-group" >
                 <div class="rd-navbar-panel" >
-                  <button class="rd-navbar-toggle"  data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button><a class="rd-navbar-brand brand" href="index.html"><!-- <img src="images/trans_test.png" alt="" width="73" /> --><h3 class="text-light" style="padding-left: 10px; padding-top: 5px;font-family: 'Chakra Petch', sans-serif;"><b>OS<span style="color:#f9bc60">AA</span>S</h3><b></h3></a>
+                  <button class="rd-navbar-toggle" id="myFunction" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button><a class="rd-navbar-brand brand" href="index.html"><!-- <img src="images/trans_test.png" alt="" width="73" /> --><h3 class="text-light" style="padding-left: 10px; padding-top: 5px;font-family: 'Chakra Petch', sans-serif;"><b>OS<span style="color:#f9bc60">AA</span>S</h3><b></h3></a>
                 </div>
+
                 <div class="rd-navbar-nav-wrap ex" >
+                  
                   <div class="rd-navbar-nav-inner">
+                    
                     <!-- <div class="rd-navbar-btn-wrap"><a class="button button-smaller button-primary-outline" href="siteunc">Courses</a></div> -->
                     <ul class="rd-navbar-nav">
-
+                      <div class="text-light" id="myDIV">
+                      <ul>
+                        <li class=""><a class = "tabs text-light hideNavbar "  href="#" data-custom-scroll-to="index">Home</a> 
+                      </li>
+                      </ul>
+                      </div>
                       <li class=""><a class = "tabs text-light" href="product.html" >Products</a> 
                       </li>
-                      <li><div class="dropdown">
-                           <button class="dropbtn">Company
-                           <i class="fa fa-caret-down"></i>
-                          </button>
-                          <div class="dropdown-content text-dark">
-                          <a href="about.html">About</a>
-                          <a href="career.html">Career</a>
-                        </div>
-                      </div>
-                      </li>
+                     
                       <li><a class = "tabs text-light"  href="consultancy.html">Consultancy</a>
+                      </li>
+                      <li><a class = "tabs text-light"  href="about.html">About</a>
                       </li>
                       <li><a class = "tabs text-light hideNavbar"  href="#" data-custom-scroll-to="contact" >Contact</a>
                       </li>
+                      
                     </ul>
+
                   </div>
                 </div>
               </div>
@@ -68,8 +71,8 @@
   <div class="container-fluid d-flex align-items-center" id="rcorners1" style="background-color: #232946">
         <div class="container d-flex align-items-center"  style="background-color:#232946;padding-bottom: 25vh;">
           <div class="row d-flex align-items-start">
-            <div class="col-md-12 col-lg-6 col-xl-5 d-flex align-items-center">
-              <div><img src="images/trans.png" style="height: 500px;width:100%" class="mx-auto d-block " alt="..." />
+            <div class="col-md-12 col-lg-6 col-xl-6 d-flex align-items-center">
+              <div><img src="images/trans.png" style="height: 500px;width:300px" class="mx-auto d-block " alt="..." />
               </div>
             </div>
             <div class="col-md-12 col-lg-6 col-xl-6 d-flex align-items-center" style="padding-bottom: 20px">
@@ -201,7 +204,7 @@
             <div class="col-md-10 col-lg-9 col-xl-7">
               <div class="section-50 section-md-75 section-xl-100">
                 <h4 class="text-center" style="color:#272343;font-family: 'Chakra Petch', sans-serif"><b>GET IN <span class="text-primary">TOUCH  </span></b></h4>
-              <h5 class="h5-text mt-3 text-center" style="color:#272343;">If your interested in OSAAS but still unsure please don't hesitate to reach out to us.</h5>
+              <h5 class="h5-text mt-3 text-center" style="color:#272343;">We'd love to hear from you for any queries or suggestions.</h5>
                 <form class="rd-mailform" data-form-type="contact" method="POST" action="post.php">
                   <div class="row row-30">
                     <div class="col-md-6">
@@ -349,7 +352,7 @@
                   <h6 class="text-white">Follow Us:</h6>
                   <ul class="list-inline list-inline-reset">
                     <!-- <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-facebook" href="#"> </a></li> -->
-                    <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin" href="#"></a></li>
+                    <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin" href="https://www.linkedin.com/company/osaastechsolutions/"></a></li>
                     <!-- <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-google-plus" href="#"></a></li> -->
                   </ul>
                 </div>
@@ -635,6 +638,17 @@ function onScroll(event){
         duration: 1000
       });
     </script>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
 
     <script>
       hljs.initHighlightingOnLoad();
