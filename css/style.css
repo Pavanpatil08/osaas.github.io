@@ -119,44 +119,6 @@ background-color: #e3f6f5;
 * @description  This section holds specific style redeclarations for some
 *               of common elements in page header
 */
-.dropbtn {
-  background-color: #232946;
-  color:white;
-  font-size: 16px;
-  border: none;
-	margin-left:10px;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  margin-top: 3px;
-  position: absolute;
-  background-color:white;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  font-size: 16px;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  padding-top: 15px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #232946;}
 
 
 
@@ -173,7 +135,8 @@ background-color: #e3f6f5;
 }
 
 .dropdown-menu {
-  margin-top: 0;
+  margin-top: 100px;
+
 }
 
 
@@ -11394,7 +11357,7 @@ html:not(.lt-ie10) .not-animated {
 	font-size: 16px;
 	line-height: 34px;
 	color: #00030a;
-	background: #232946;
+	background:#3da9fc;
 	z-index: 998;
 }
 
@@ -11507,7 +11470,7 @@ html:not(.lt-ie10) .not-animated {
 	width: 270px;
 	padding: 112px 0 56px;
 	color: #fff;
-	background: #232946;
+	background: #3da9fc;
 	overflow-x: hidden;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
