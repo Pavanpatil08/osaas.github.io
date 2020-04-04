@@ -68,7 +68,7 @@ body {
 }
 
 #rcorners1 {
- clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 0);
+ clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 0);
 }
 
 #rcorners2 {
@@ -76,6 +76,49 @@ clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
 background-color: #e3f6f5;
 }
 
+/*ul{
+        padding: 0;
+        list-style: none;
+        color:black;
+    }
+    ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
+    ul li a{
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        color:black;
+        background: #939393;
+    }
+    ul li ul.dropdown{
+        min-width: 100%; /* Set width of the dropdown */
+       /* background: #f2f2f2;
+        display: none;
+        color: black;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.dropdown{
+        display: block;
+        color:black; /* Display the dropdown */
+    /*}
+    ul li ul.dropdown li{
+        display: block;
+        color:black;
+    }*/
+/*
+* @section      Page Header
+* @description  This section holds specific style redeclarations for some
+*               of common elements in page header
+*/
 .dropbtn {
   background-color: #232946;
   color:white;
@@ -90,6 +133,8 @@ background-color: #e3f6f5;
 
 .dropdown-content {
   display: none;
+  margin-top: 3px;
+
   position: absolute;
   background-color:white;
   min-width: 160px;
@@ -100,7 +145,7 @@ background-color: #e3f6f5;
 .dropdown-content a {
   color: black;
   font-size: 16px;
-  padding: 12px 16px;
+  padding: 15px 16px;
   text-decoration: none;
   display: block;
 }
@@ -110,11 +155,26 @@ background-color: #e3f6f5;
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #232946;}
-/*
-* @section      Page Header
-* @description  This section holds specific style redeclarations for some
-*               of common elements in page header
-*/
+
+
+
+.navbar .nav-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.dropdown-toggle::after {
+   transition: transform 0.15s linear; 
+}
+
+.show.dropdown .dropdown-toggle::after {
+  transform: translateY(3px);
+}
+
+.dropdown-menu {
+  margin-top: 0;
+}
+
+
 .page-head {
 	position: relative;
 	z-index: 1080;
@@ -11332,7 +11392,7 @@ html:not(.lt-ie10) .not-animated {
 	font-size: 16px;
 	line-height: 34px;
 	color: #00030a;
-	background: #094067;
+	background: #232946;
 	z-index: 998;
 }
 
@@ -11445,7 +11505,7 @@ html:not(.lt-ie10) .not-animated {
 	width: 270px;
 	padding: 112px 0 56px;
 	color: #fff;
-	background: #094067;
+	background: #232946;
 	overflow-x: hidden;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
