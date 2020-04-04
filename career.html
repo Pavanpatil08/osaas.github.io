@@ -31,31 +31,27 @@
             <div class="rd-navbar-inner">
               <div class="rd-navbar-group">
                 <div class="rd-navbar-panel">
-                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button><a class="rd-navbar-brand brand" href="index.html"><img src="images/trans_test.png" alt="" width="73" /><h3 class="text-light" style="padding-left: 10px; padding-top: 5px;font-family: 'Chakra Petch', sans-serif;"><b>OS<span style="color:#f9bc60">AA</span>S</h3><b></h3></a>
+                   <button class="rd-navbar-toggle" id="myFunction" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button><a class="rd-navbar-brand brand" href="index.html"><img src="images/trans_test.png" alt="" width="73" /><h3 class="text-light" style="padding-left: 10px; padding-top: 5px;font-family: 'Chakra Petch', sans-serif;"><b>OS<span style="color:#f9bc60">AA</span>S</h3><b></h3></a>
                 </div>
                 <div class="rd-navbar-nav-wrap">
                   <div class="rd-navbar-nav-inner">
                     <!-- <div class="rd-navbar-btn-wrap"><a class="button button-smaller button-primary-outline" href="siteunc">Courses</a></div> -->
                     <ul class="rd-navbar-nav">
-
+                      <div class="text-light" id="myDIV">
+                      <ul>
+                        <li class=""><a class = "tabs text-light"  href="index.html">Home</a> 
+                      </li>
+                      </ul>
+                      </div>
                       <li class=""><a class = "tabs text-light" href="product.html" >Products</a> 
                       </li>
-                       <li><div class="dropdown">
-                          <button class="dropbtn">Company
-                           <i class="fa fa-caret-down"></i>
-                          </button>
-                          <div class="dropdown-content text-dark">
-                          <a href="about.html">About</a>
-                          <a href="career.html">Career</a>
-                        </div>
-                      </div>
-
+                       <li><a class = "tabs text-light"  href="consultancy.html">Consultancy</a>
                       </li>
-                      <li><a class = "tabs text-light"  href="consultancy.html">Consultancy</a>
+                      <li><a class = "tabs text-light"  href="about.html">About</a>
                       </li>
                       <li><a class = "tabs text-light"  href="index.html#contact">Contact</a>
                       </li>
-                      
+                       
                     </ul>
                   </div>
                 </div>
@@ -233,7 +229,7 @@
                   <h6 class="text-white">Follow Us:</h6>
                   <ul class="list-inline list-inline-reset">
                    <!--  <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-facebook" href="#"> </a></li> -->
-                    <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin" href="#"></a></li>
+                    <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin" href="https://www.linkedin.com/company/osaastechsolutions/"></a></li>
                     <!-- <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-google-plus" href="#"></a></li> -->
                   </ul>
                 </div>
@@ -296,6 +292,16 @@ function onScroll(event){
         }, 1200);
       });
     </script>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </body>
