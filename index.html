@@ -71,8 +71,12 @@
       <div class="row d-flex align-items-start">
         <div class="col-md-12 col-lg-6 col-xl-6 d-flex align-items-center">
           <div>
-          <video loop muted autoplay poster="osaas.mp4" width="350" height="450">
-        <source src="final-4.mp4" type="video/mp4" class="mx-auto d-block">
+         
+          <video autoplay muted loop poster="final.mp4" width="500" height="500" style="width: 100%; max-height: 100%;" id="vid">
+        <source src="final-4.mp4" type="video/mp4"  class="mx-auto d-block">
+          <script>
+              document.getElementById('vid').play();
+          </script>
     </video>
           </div>
         </div>
