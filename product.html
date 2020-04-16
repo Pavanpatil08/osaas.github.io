@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:500&display=swap" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">  
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -27,7 +20,7 @@
     <div class="page">
       <header class="page-head">
         <div class="rd-navbar-wrap" style="background-color: #232946">
-          <nav id="navbar-1" class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="53px" data-xl-stick-up-offset="53px" data-xxl-stick-up-offset="53px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true" style="background-color: #232946">
+          <nav id="navbar-1" class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="53px" data-xl-stick-up-offset="53px" data-xxl-stick-up-offset="53px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true" style="background-color: #232946;opacity:0.9">
             <div class="rd-navbar-inner">
               <div class="rd-navbar-group">
                 <div class="rd-navbar-panel">
@@ -149,7 +142,7 @@
               <div class="col-sm-9 col-md-11 col-xl-12">
                 <div class="row row-50 ">
                   <div class="col-md-6 col-lg-10 col-xl-3 mx-auto d-block">
-                    <div class="inset-xl-right-20 text-center" ><a class="brand" href="index.html"><img src="images/trans_test.png"  alt="" width="143" height="28" class=""  /></a>
+                    <div class="inset-xl-right-20 text-center" ><a class="brand" href="index"><img src="images/trans_test.png"  alt="" width="143" height="28" class=""  /></a>
                       <h6 class="text-muted text-center">
                         OSAAS Tech Solutions Pvt. Ltd.
                       </h6>
@@ -225,24 +218,7 @@
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-  <script>
-function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    $('.tabs').each(function () {
-        var refElement = $("#"+$(this).data("customScrollTo"));
-        if ((refElement.position().top -140) <= (scrollPos) && refElement.position().top + refElement.height() - 190 > scrollPos) {
-            // $('#menu-center ul li a').removeClass("active");
-            $(this.parentElement).addClass("active");
-        }
-        else{
-            $(this.parentElement).removeClass("active");
-        }
-    });
-}
-    </script>
-
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
+  
    <script>
       var prevScrollpos = window.pageYOffset;
       window.onscroll = function() {
@@ -255,23 +231,6 @@ function onScroll(event){
         prevScrollpos = currentScrollPos;
       }
 </script>
-    <script>
-      AOS.init({
-        easing: 'ease-out-back',
-        duration: 1000
-      });
-    </script>
-
-    <script>
-      hljs.initHighlightingOnLoad();
-
-      $('.hero__scroll').on('click', function(e) {
-        $('html, body').animate({
-          scrollTop: $(window).height()
-        }, 1200);
-      });
-    </script>
-
   <script>
 function myFunction() {
   var x = document.getElementById("myDIV");
@@ -282,6 +241,5 @@ function myFunction() {
   }
 }
 </script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </body>
 </html>
