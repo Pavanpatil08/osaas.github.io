@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&display=swap');
+
+rd-navbar-panel
 @charset "UTF-8";
 a:focus,
 button:focus {
@@ -55,7 +58,7 @@ html {
 }
 
 body {
-	font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-family: 'Chakra Petch', sans-serif;
 	-webkit-text-size-adjust: none;
 	color: #9f9f9f;
 	font-weight: 400;
@@ -75,45 +78,25 @@ body {
 clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
 background-color: #e3f6f5;
 }
-
-/*ul{
-        padding: 0;
-        list-style: none;
-        color:black;
-    }
-    ul li{
-        display: inline-block;
-        position: relative;
-        line-height: 21px;
-        text-align: left;
-    }
-    ul li a{
-        display: block;
-        padding: 8px 25px;
-        color: #333;
-        text-decoration: none;
-    }
-    ul li a:hover{
-        color:black;
-        background: #939393;
-    }
-    ul li ul.dropdown{
-        min-width: 100%; /* Set width of the dropdown */
-       /* background: #f2f2f2;
-        display: none;
-        color: black;
-        position: absolute;
-        z-index: 999;
+ .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 50px;
+        padding-top: 50px; /* Location of the box */
         left: 0;
-    }
-    ul li:hover ul.dropdown{
-        display: block;
-        color:black; /* Display the dropdown */
-    /*}
-    ul li ul.dropdown li{
-        display: block;
-        color:black;
-    }*/
+        top: 0;/* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+
+      /* Modal Content */
+      .modal-content {
+        margin: auto;
+      }
+
+
 /*
 * @section      Page Header
 * @description  This section holds specific style redeclarations for some
@@ -311,7 +294,12 @@ hr {
 	line-height: 1.71429;
 }
 
-h1, h2, h3, h4, h5, h6,a, .h1, .h2, .h3, .h4, .h5, .h6, .h7 {
+
+ h3{
+        font-family:'Chakra Petch', sans-serif,medium;
+      } 
+
+h1, h2, h4, h5, h6,a, .h1, .h2, .h3, .h4, .h5, .h6, .h7 {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-family: 'Open Sans', sans-serif;
@@ -11357,7 +11345,7 @@ html:not(.lt-ie10) .not-animated {
 	font-size: 16px;
 	line-height: 34px;
 	color: #00030a;
-	background:#3da9fc;
+	background:#393f59;
 	z-index: 998;
 }
 
@@ -11437,6 +11425,7 @@ html:not(.lt-ie10) .not-animated {
 	display: -webkit-flex;
 	display: flex;
 	position: fixed;
+	align-content: center;
 	left: 0;
 	top: 0;
 	right: 0;
@@ -11470,7 +11459,7 @@ html:not(.lt-ie10) .not-animated {
 	width: 270px;
 	padding: 112px 0 56px;
 	color: #fff;
-	background: #3da9fc;
+	background: #393f59;
 	overflow-x: hidden;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
