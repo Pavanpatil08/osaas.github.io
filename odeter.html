@@ -10,262 +10,10 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="demo.css">
   </head>
   <style>
-    
- /* Timeline */
-@media (min-width: 768px){
-  .timeline {
-      width: 750px;
-  }
-}
-
-.timeline {
-  list-style: none;
-  padding: 20px 0 20px;
-  position: relative;
-
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.timeline:before {
-  content: "";
-  bottom: 0;
-  top: 0;
-  left: 50%;
-  position: absolute;
-  
-  background-color: #eee;
-  width: 3px;
-  margin-left: -1.5px;
-}
-
-.timeline > li {
-  margin-bottom: 20px;
-  position: relative;
-}
-.timeline > li:before,
-.timeline > li:after {
-  content: " ";
-  display: table;
-}
-.timeline > li:after {
-  clear: both;
-}
-
-/* Timeline Token */
-.timeline-token {
-  color: white;
-  background-color: #5C4B51;
-  
-  position: absolute;
-  left: 50%;
-  top: 9px;
-  box-sizing: border-box;
-  
-  width: 40px;
-  height: 40px;
-  
-  line-height: 42px;
-  font-size: 1.4em;
-  text-align: center;
-  
-  margin-left: -20px;
-  border-radius: 50%;
-}
-
-/* Timeline Panel */
-.timeline-panel {
-  float: left;
-  width: 43%;
-  position: relative;
-  padding: 20px;
-  box-sizing: border-box;
-  
-  border: 1px solid #d4d4d4;
-  border-radius: 5px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-}
-.timeline-panel:before {
-  content: "";
-  position: absolute;
-  top: 13px;
-  right: -15px;
-  display: inline-block;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
-  border-bottom: 15px solid transparent;
-}
-.timeline-panel:after {
-  position: absolute;
-  top: 14px;
-  right: -14px;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-left: 14px solid #5C4B51;
-  border-right: 0 solid #5C4B51;
-  border-bottom: 14px solid transparent;
-  content: " ";
-}
-
-.timeline-panel-title {
-  color: white;
-  background-color: #5C4B51;
-  padding: 11px;
-  
-  font-weight: 500;
-   
-  margin: -20px -20px 0 -20px;
-  border-radius: 5px 5px 0 0;
-  box-shadow: 0 1px 1px #5C4B51;
-}
-
-.timeline-event-right > .timeline-panel {
-  float: right;
-}
-.timeline-event-right > .timeline-panel:before {
-  border-left-width: 0;
-  border-right-width: 15px;
-  left: -15px;
-  right: auto;
-}
-.timeline-event-right > .timeline-panel:after {
-  border-left-width: 0;
-  border-right-width: 14px;
-  left: -14px;
-  right: auto;
-}
-
-
-
-
-
-.rowRWD:nth-child(odd) {
-   background: #E0E0E0 !important;
-}
-
-/* .stripe { 
-  background: #E0E0E0 !important; 
-} */
-
-.tableRWD{
-  display:table;  /* Defines a Table */
-  font-size:17px;
-  
-  color:#666666;
-  margin:10px 0;
-  width: 100%;
-}
-
-.table-headRWD{
-   display: table-header-group; /* Defines a table header group */
-}
-
-.table-headRWD .columnRWD{ /* Column inside the table-head */
-  background:#393A3A;
-  color:#fff;
-  border-right:1px solid #fff;
-  border-bottom:none;
-  text-align: center;!important;
-  font-weight: 600;
-}
-
-.table-headRWD .column:hover{ /* Column hover inside the table-head */
-  background:#222222;
-}
-
-.rowRWD {
-  display:table-row; /* Defines a table row */
-}
-
-.rowRWD .columnRWD:nth-child(1){ /* First column in a row */
-  border-left:1px solid #fff;
-  text-align: center !important;
-}
-
-.rowRWD:last-child .columnRWD{  /* column in a last row */
-  border-bottom:none;
-}
-
-.columnRWD{
-  display:table-cell; /* Defines a table cell */
-  padding: 20px;
-  
-  border-right:1px solid #fff;
-  background:#EFF0F1;
-  text-align: center;
-  min-width: 100px !important;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-
-/*
-**********************************************
-RESPONIVE
-**********************************************
-*/
-
-@media all and (max-width: 640px){
-  .tableRWD,
-  .rowRWD,
-  .columnRWD,
-  .columnRWD:before{
-    display:block;  /* Converts a table, table row, table column and table column:before into a block element */
-  }
-  
-  .tableRWD,
-  .rowRWD .columnRWD:last-child{
-    border-bottom:none;
-  }
-  
-  .table-headRWD{
-    position:absolute;  /* Hides table head but not using display none */
-    top:-1000em;
-    left:-1000em;
-  }
-  
-  .rowHeader {
-    background-color: #393A3A !important;
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  .rowRWD{
-    border:1px solid #eeeeee;
-    border-top:2px solid #fff;
-    border-bottom:2px solid #fff;
-    margin:20px 0;
-  }
-  
-  .rowRWD .columnRWD:nth-child(1){ /* first column of the row */
-    border-left:none;
-  }
-  
-  .rowRWD .columnRWD:last-child{ /* last column of the row */
-    border-right:none;
-  }
-  
-  .rowRWD:last-child .columnRWD,
-  .columnRWD{ /* Column in the last row and column */
-    
-  }
-  .columnRWD:first-child{
-    background-color: #d8d8d8;
-  }
-  
-  .columnRWD:before{ /* prints the value of data-label attribute before the column data */
-    font-weight:bold;
-   text-align: center;
-    font-size:20px;
-    content:" "attr(data-label)" "; /* call the attribute value of data-label and adds a string // */
-  }
+ 
   </style>
   <body>
     <div class="preloader">
@@ -326,7 +74,7 @@ RESPONIVE
             <div class="text-center">
               <h4 class="text-light animated bounceInDown slower" >Automate, Analyse and Operate Security Easily</h4>
 
-              <a href="#" data-custom-scroll-to="price"   style="background-color: #eebbc3;" aria-pressed="true"> <button type="button" class="btn btn-outline-light btn-lg text-dark " style="background-color: #eebbc3;><i class="fa fa-download mr-4"></i>DOWNLOAD</button></a>
+              <a href="#" data-custom-scroll-to="price"   style="background-color: #eebbc3;" aria-pressed="true"> <button type="button" class="btn btn-outline-light btn-lg text-dark " style="background-color: #eebbc3;"><!-- <i class="fa fa-download mr-4"> --></i>Coming Soon...</button></a>
             </div>
           </div>
         </div>
@@ -357,48 +105,59 @@ RESPONIVE
   </div> 
 
 <div class="container-fluid" >
- 
-<div class="container mt-5">
-     <h3 class=" text-center text-dark mb-5 card-text mt-5" style="margin-top: 100px" >How it Works?</h3> 
-    <ul class="timeline mt-5">
-    <li>
-      <div class="timeline-token">
-        <h4 class="text-light">1</h4>
+ <div class="timeline-container">
+  <h3 class="project-name mt-5">How it Works?</h3> 
+  <div id="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <h3 class="text-center mt-2 text-light" aria-hidden="true">1</h3>
+        </div>
+        <div class="timeline-content">
+          <h2 class="text-center">SCAN</h2>
+           <img src="images/1 White.png" class="mt-4 text-center mx-auto d-block" style="height:70px;width:70px;color:white">
+          <h5 class="text-center" >
+            Scan through all the system settings and securities 
+          </h5>
+        </div>
       </div>
-      <div class="timeline-panel">
-        <h5 class="timeline-panel-title text-center">SCAN</h5>
-        <p class="text-dark">Scan through all the system settings and securities </p>
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <h3 class="text-center mt-2 text-light" aria-hidden="true">2</h3>
+        </div>
+        <div class="timeline-content right">
+          <h2 class="text-center">SCORE & ACTIONS</h2>
+         <img src="images/2 White.png" class="mt-4 text-center mx-auto d-block" style="height:70px;width:70px;color:white">
+          <h5 class="text-center">
+            Provide score and actions to improve system security. 
+          </h5>
+        </div>
       </div>
-    </li>
-    <li class="timeline-event-right
-               timeline-event-green">
-      <div class="timeline-token">
-        <h4 class="text-light">2</h4>
+
+        <div class="timeline-item">
+        <div class="timeline-icon">
+          <h3 class="text-center mt-2 text-light" aria-hidden="true">3</h3>
+        </div>
+        <div class="timeline-content">
+          <h2 class="text-center">FIXING</h2>
+          <img src="images/5 White.png" class="mt-4 text-center mx-auto d-block" style="height:70px;width:70px;color:white">
+          <h5 class="text-center">
+             Apply rectifications on the actions choosen bt the user, to provide optional security.
+          </h5>
+        </div>
       </div>
-      <div class="timeline-panel">
-        <h5 class="timeline-panel-title text-center">SCORE & ACTIONS</h5>
-        <p class="text-dark"> Provide score and actions to improve system security. </p>
-      </div>
-    </li>
-    <li class="
-               timeline-event-red">
-      <div class="timeline-token">
-        <h4 class="text-light">3</h4>
-      </div>
-      <div class="timeline-panel">
-        <h5 class="timeline-panel-title text-center">FIXING</h5>
-        <p class="text-dark"> Apply rectifications on the actions choosen bt the user, to provide optional security</p>
-      </div>
-    </li>
-  </ul>
+
   </div>
+  </div>
+
 </div>
  
 <div class="container-fluid" style="background-color:#102144">
 <div class="container">
 
   <div class="row justify-content-sm-center mt-5">
-    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12               ">
       <h3 class=" text-center text-light  mt-5" style="margin-top: 100px" >Features</h3>
      <img src="images/asset10.png" style="" class="img mt-5  mb-5" alt="..." />
    </div>
@@ -416,22 +175,12 @@ RESPONIVE
     <div class="columnRWD text-center" data-label="O-Deter Free">O-Deter Free</div>
   </div>
 
-  <!-- 
-**********************************************
-ROW #1
-***********************************************
--->
   <div class="rowRWD">
-    <div class="columnRWD rowHeader stripe" data-label="Features"> Computer Score</div>
+    <div class="columnRWD rowHeader stripe" data-label="Features"> Security Score</div>
      <div class="columnRWD" data-label="O-Deter Pro"><h4><i class="fas fa-check text-success"></i></h4></div>
     <div class="columnRWD" data-label="O-Deter Free"><h4><i class="fas fa-check text-success"></i></h4></div>
     </div>
-    
-<!-- 
-**********************************************
-ROW #2
-***********************************************
--->
+ 
   <div class="rowRWD">
     <div class="columnRWD rowHeader" data-label="Features">Check for Software Updates </div>
      <div class="columnRWD" data-label="O-Deter Pro"><h4><i class="fas fa-check text-success"></i></h4></div>
@@ -439,87 +188,39 @@ ROW #2
   </div>
 
 
-<!-- 
-**********************************************
-ROW #3
-***********************************************
--->
   <div class="rowRWD">
     <div class="columnRWD rowHeader stripe" data-label="Features">Check for drivers' Updates </div>
      <div class="columnRWD" data-label="O-Deter Pro"><h4><i class="fas fa-check text-success"></i></h4></div>
     <div class="columnRWD stripe" data-label="O-Deter Free"><h4><i class="fas fa-check text-success"></i></h4></div>
   </div>
  
-
-<!-- 
-**********************************************
-ROW #4
-***********************************************
--->
   <div class="rowRWD">
-    <div class="columnRWD rowHeader" data-label="Features">System Compromised Probability</div>
+    <div class="columnRWD rowHeader" data-label="Features">Probability os system being compramised</div>
      <div class="columnRWD" data-label="O-Deter Pro"><h4><i class="fas fa-check text-success"></i></h4></div>
     <div class="columnRWD" data-label="O-Deter Free"><h4><i class="fas fa-check text-success"></i></h4></div>
   </div>
  
-
-<!-- 
-**********************************************
-ROW #5
-***********************************************
--->
   <div class="rowRWD">
-    <div class="columnRWD rowHeader stripe" data-label="Features">Export Configuration</div>
+    <div class="columnRWD rowHeader stripe" data-label="Features">Export detailed report</div>
      <div class="columnRWD" data-label="O-Deter Pro"><h4><i class="fas fa-check text-success"></i></h4></div>
     <div class="columnRWD" data-label="O-Deter Free"><h4><i class="fas fa-check text-success"></i></h4></div>
   </div>
   
-<!-- 
-**********************************************
-ROW #6
-***********************************************
--->
   <div class="rowRWD">
-    <div class="columnRWD rowHeader" data-label="Features">Set Configurations</div>
+    <div class="columnRWD rowHeader" data-label="Features">Configure compliant settings</div>
+     <div class="columnRWD" data-label="O-Deter Pro"><h4><i class="fas fa-check text-success"></i></h4></div>
+    <div class="columnRWD" data-label="O-Deter Free"><h4><i class="fas fa-times text-danger"></i></h4></div>
+  </div>
+  <div class="rowRWD">
+    <div class="columnRWD rowHeader stripe" data-label="Features">Customized Configurations based on User's profile</div>
      <div class="columnRWD" data-label="O-Deter Pro"><h4><i class="fas fa-check text-success"></i></h4></div>
     <div class="columnRWD" data-label="O-Deter Free"><h4><i class="fas fa-times text-danger"></i></h4></div>
   </div>
   
-
-<!-- 
-**********************************************
-ROW #7
-***********************************************
--->
-  <div class="rowRWD">
-    <div class="columnRWD rowHeader stripe" data-label="Features">Customized Configuration based on User's profile</div>
-     <div class="columnRWD" data-label="O-Deter Pro"><h4><i class="fas fa-check text-success"></i></h4></div>
-    <div class="columnRWD" data-label="O-Deter Free"><h4><i class="fas fa-times text-danger"></i></h4></div>
-  </div>
-  
-
-<!-- 
-**********************************************
-ROW #8
-***********************************************
--->
   <div class="rowRWD">
     <div class="columnRWD rowHeader" data-label="Features">Update Softwares to Latest version</div>
     <div class="columnRWD" data-label="O-Deter Pro"><h4><i class="fas fa-check text-success"></i></h4></div>
     <div class="columnRWD" data-label="O-Deter Free"><h4><i class="fas fa-times text-danger"></i></h4></div>
-  </div>
-
-<!-- 
-**********************************************
-ROW #9
-***********************************************
--->
- 
-
- <div class="rowRWD">
-    <div class="columnRWD rowHeader stripe" data-label="Features">Manage Removable Devices </div>
-    <div class="columnRWD" data-label="O-Deter Pro"><h4><i class="fas fa-check text-success"></i></h4></div>
-   <div class="columnRWD" data-label="O-Deter Free"><h4><i class="fas fa-times text-danger"></i></h4></div>
   </div>
 
   <div class="rowRWD">
@@ -528,16 +229,17 @@ ROW #9
     <div class="columnRWD" data-label="O-Deter Free"><h4><i class="fas fa-times text-danger"></i></h4></div>
   </div>
   <div class="rowRWD">
-    <div class="columnRWD rowHeader stripe" data-label="Features">Update to latest driver version </div>
+    <div class="columnRWD rowHeader stripe" data-label="Features">Update to latest driver versions </div>
     <div class="columnRWD" data-label="O-Deter Pro"><h4><i class="fas fa-check text-success"></i></h4></div>
     <div class="columnRWD" data-label="O-Deter Free"><h4><i class="fas fa-times text-danger"></i></h4></div>
   </div>
-<!-- 
 
-**********************************************
-ROW #10
-***********************************************
--->
+<div class="rowRWD">
+    <div class="columnRWD rowHeader"data-label="Pricing" ></div>
+    <div class="columnRWD price" data-label="O-Deter Pro"><h5 style="font-size: 30px">$60</h5></div>
+    <div class="columnRWD" data-label="O-Deter Free"><h5 style="font-size: 30px">Free</h5></div>
+  </div>
+
   <div class="rowRWD">
     <div class="columnRWD rowHeader" ></div>
     <div class="columnRWD" data-label="O-Deter Pro"> <a href="#"   style="background-color: #232946;" aria-pressed="true"> <button type="button" class="btn btn-outline-dark btn-lg text-light "><i class="fa fa-download mr-4"></i>Buy Now</button></a></div>
